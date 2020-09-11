@@ -39,7 +39,6 @@ def main():
     current_timestamp = int(time.time())   # начальное значение timestamp
 
     while True:
-        print(current_timestamp)
         try:
             new_homework = get_homework_statuses(current_timestamp)
             if new_homework.get('homeworks'):
