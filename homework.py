@@ -10,8 +10,10 @@ load_dotenv()
 PRACTICUM_TOKEN = os.getenv("PRACTICUM_TOKEN")
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
-URL_PRACTIKUM = os.getenv('URL_PRACTIKUM')
-URL_REQUEST = os.getenv('URL_REQUEST')
+#URL_PRACTIKUM = os.getenv('URL_PRACTIKUM') практикум не пропускает URL в конфиге
+#URL_REQUEST = os.getenv('URL_REQUEST') практикум не пропускает URL в конфиге
+URL_PRACTIKUM = 'https://praktikum.yandex.ru/api/user_api/{}'
+URL_REQUEST = 'homework_statuses/'
 
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
 
