@@ -10,10 +10,9 @@ load_dotenv()
 PRACTICUM_TOKEN = os.getenv("PRACTICUM_TOKEN")
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
-#URL_PRACTIKUM = os.getenv('URL_PRACTIKUM') практикум не пропускает URL в конфиге
-#URL_REQUEST = os.getenv('URL_REQUEST') практикум не пропускает URL в конфиге
-URL_PRACTIKUM = 'https://praktikum.yandex.ru/api/user_api/{}'
-URL_REQUEST = 'homework_statuses/'
+URL_PRACTIKUM = os.getenv('URL_PRACTIKUM')
+URL_REQUEST = os.getenv('URL_REQUEST')
+
 
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
 
@@ -40,7 +39,8 @@ def get_homework_statuses(current_timestamp):
     if current_timestamp is None or isinstance(current_timestamp, int):
         current_timestamp = int(time.time())
     try:
-        homework_statuses = requests.get(URL_PRACTIKUM.format(URL_REQUEST), headers=headers, params=params)
+        homework_statuses = requests.get(f"{URL_PRACTIKUM}{URL_REQUEST}", headers=headers, params=params)
+        print(homework_statuses)
         return homework_statuses.json()
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)
