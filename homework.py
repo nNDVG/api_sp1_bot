@@ -21,7 +21,7 @@ bot = telegram.Bot(token=TELEGRAM_TOKEN)
 def parse_homework_status(homework):
     homework_name = homework.get('homework_name')
     status = homework.get('status')
-    if homework_name and status is None:
+    if not (homework_name and status):
         logging.error('Произошла ошибка при запросе')
         return f'Не найдено домашнее задание, проверьте запрос.'
     if status not in ['rejected', 'approved']:
