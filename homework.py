@@ -40,6 +40,7 @@ def get_homework_statuses(current_timestamp):
         current_timestamp = int(time.time())
     try:
         homework_statuses = requests.get(f"{URL_PRACTIKUM}{URL_REQUEST}", headers=headers, params=params)
+        print(f"{URL_PRACTIKUM}{URL_REQUEST}")
         print(homework_statuses)
         return homework_statuses.json()
     except requests.exceptions.RequestException as e:
