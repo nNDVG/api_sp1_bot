@@ -51,10 +51,10 @@ def send_message(message):
 
 
 def main():
-    current_timestamp = int(time.time())
+    current_timestamp = 0 #int(time.time())
 
     while True:
-        print(get_homework_statuses(current_timestamp))
+
         try:
             new_homework = get_homework_statuses(current_timestamp)
             if new_homework.get('homeworks'):
