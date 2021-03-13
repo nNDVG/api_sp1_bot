@@ -11,7 +11,7 @@
 * Here give a name to your app and select a suitable region
 * Then choose to place with github and follow the instructions
 * After placement, go to the application settings and go to specify the following variables in the "Config Vars" section:
- - PRACTICUM_TOKEN:  your token from prakticum
+ - PRACTICUM_TOKEN:  your token from praktikum
  - TELEGRAM_TOKEN : token your telegram bot
  - CHAT_ID: your telegram chat ID 
 
