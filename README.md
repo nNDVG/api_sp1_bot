@@ -7,7 +7,7 @@
 * Create your telegram bot at the godfather bot 
 * Register on the Heroku website: https://heroku.com/
 * Click on the tab "Nev"
-* Click "сreate new app"
+* Click "Create new app"
 * Here give a name to your app and select a suitable region
 * Then choose to place with github and follow the instructions
 * After placement, go to the application settings and go to specify the following variables in the "Config Vars" section:
