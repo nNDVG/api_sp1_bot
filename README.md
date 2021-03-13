@@ -1,5 +1,5 @@
 # Description
-###Telegram bot to receive notifications about the current status of homework review in Yandex.Praktikum
+### Telegram bot to receive notifications about the current status of homework review in Yandex.Praktikum
 
 # Run
 ### To install on a local computer, you must:
