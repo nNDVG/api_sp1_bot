@@ -6,7 +6,7 @@
 * Download project files from the repository or clone it: https://github.com/nNDVG/api_sp1_bot.git
 * Create your telegram bot at the godfather bot 
 * Register on the Heroku website: https://heroku.com/
-* Click on the tab "Nev"
+* Click on the tab "New"
 * Click "Create new app"
 * Here give a name to your app and select a suitable region
 * Then choose to place with github and follow the instructions
@@ -18,8 +18,11 @@
 # Author
  - https://github.com/nNDVG/
  - https://hub.docker.com/u/ndvg/
+### Contacts
+ - Telegram: nNDVG
+ - Email: n.dvg@yandex.ru
 
 # Tech stack:
-* Python
+* Python3.x
 * Python-dotenv
 * Python-telegram-bot
